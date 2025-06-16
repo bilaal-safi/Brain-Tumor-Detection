@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Tumor Detection</title>
+</head>
+<body>
+
+    <center>
+        <header>
+            <h1><u>Brain Tumor Detection</u></h1>
+        </header>
+        <hr>
+
+        <section>
+            <h2>Upload a Medical Image</h2>
+            <form method="post" enctype="multipart/form-data">
+                <input type="file" name="file1"><br><br>
+                <input type="submit" value="Analyze">
+            </form>
+            <br>
+            <img src="static/output.jpg" align="middle" width="300" style="border:2px solid #888;" />
+            <br><br>
+            <h2>
+                <font color="green">{{ result }}</font>
+            </h2>
+        </section>
+        <hr>
+    </center>
+
+</body>
+</html>
